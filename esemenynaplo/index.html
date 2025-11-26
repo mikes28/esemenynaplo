@@ -1,14 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>esemenynaplo</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="console"></div>
+    <div>
+      <label for="eventType">Event Type:</label>
+      <select name="eventType" id="eventType">
+        <option value="error">error</option>
+        <option value="info">info</option>
+        <option value="warning">warning</option>
+      </select>
+      <input type="text" name="event" id="event" />
+      <button type="button" id="addEntryB">Add entry</button>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
