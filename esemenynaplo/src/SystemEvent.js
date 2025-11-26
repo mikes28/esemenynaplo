@@ -1,8 +1,11 @@
 export default class SystemEvent {
     constructor(type, desc, time) {
-        this.username = username;
+        this.type = type;
+        this.desc = desc;
         this.time = new Date(time);
-        this.success = success;
+    }
+    toString() {
+        return `${this.time} - ${this.desc}`;
     }
     
 }
