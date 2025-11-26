@@ -1,0 +1,15 @@
+#console{
+  background-color: black;
+  font-family: monospace;
+  color: green;
+}
+
+.info{
+  color: green;
+}
+.warn{
+  color: orange;
+}
+.error{
+  color: red;
+}
