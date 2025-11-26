@@ -22,6 +22,7 @@ function listEvents() {
 function addEvent(){
   events.push(new SystemEvent( document.getElementById("eventType").value,
   document.getElementById("event").value, new Date()));
+  document.getElementById("event").value="";
   listEvents();
 }
 document.getElementById("addEntryB").addEventListener("click", addEvent);
